@@ -105,4 +105,13 @@ public class Vehicle {
                 ", availableForRent=" + availableForRent +
                 '}';
     }
+
+
+    // crearusuarioView -> view
+    // crearUsuario -> service
+    // crearUsuarioBD -> repository
+    // verUsuario
+    // actualizarUsuario
+    // enviarDatosaBD
+    //validarSiUsuarioexiste
 }

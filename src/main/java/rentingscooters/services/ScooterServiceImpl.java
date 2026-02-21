@@ -3,6 +3,7 @@ package rentingscooters.services;
 import rentingscooters.domain.Scooter;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class ScooterServiceImpl implements ScooterService{
 
@@ -35,4 +36,6 @@ public class ScooterServiceImpl implements ScooterService{
     public void deleteScooter(int id) {
 
     }
+
+
 }

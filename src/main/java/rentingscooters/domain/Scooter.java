@@ -1,16 +1,16 @@
 package rentingscooters.domain;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Scooter extends Vehicle{
 
     private float engineCapacity;
     private double pricePerHour;
-    private Date lastMaintenanceDate;
+    private LocalDate lastMaintenanceDate;
     private PickupPoint pickupPoint;
 
 
-    public Scooter(int idVehicle, String brand, String model, String color, int paxCapacity, String reference, String plate, boolean availableForRent, float engineCapacity, double pricePerHour, Date lastMaintenanceDate, PickupPoint pickupPoint) {
+    public Scooter(int idVehicle, String brand, String model, String color, int paxCapacity, String reference, String plate, boolean availableForRent, float engineCapacity, double pricePerHour, LocalDate lastMaintenanceDate, PickupPoint pickupPoint) {
         super(idVehicle, brand, model, color, paxCapacity, reference, plate, availableForRent);
         this.engineCapacity = engineCapacity;
         this.pricePerHour = pricePerHour;
@@ -38,11 +38,11 @@ public class Scooter extends Vehicle{
         this.pricePerHour = pricePerHour;
     }
 
-    public Date getLastMaintenanceDate() {
+    public LocalDate getLastMaintenanceDate() {
         return lastMaintenanceDate;
     }
 
-    public void setLastMaintenanceDate(Date lastMaintenanceDate) {
+    public void setLastMaintenanceDate(LocalDate lastMaintenanceDate) {
         this.lastMaintenanceDate = lastMaintenanceDate;
     }
 
